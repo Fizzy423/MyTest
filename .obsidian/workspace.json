@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#start",
+                "query": "tag:#docs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "docs/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "docs/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "docs/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,6 +187,22 @@
   "active": "34c503fbea286daf",
   "lastOpenFiles": [
     "docs/01-kotlin/README.md",
+    "docs/README.md",
+    "README.md",
+    "docs/START-HERE.md",
+    "docs/SUMMARY.md",
+    "docs/RESOURCES.md",
+    "docs/README-NEW.md",
+    "docs/CONTEST-REGULATION.md",
+    "docs/QUICKSTART.md",
+    "docs/KOTLIN-QUICK.md",
+    "docs/END-TO-END.md",
+    "docs/12-competition-checklist.md",
+    "docs/11-common-errors.md",
+    "docs/10-code-templates.md",
+    "docs/09-mvvm-architecture.md",
+    "docs/00-kotlin-vs-dart.md",
+    "Без названия.canvas",
     "docs/01-kotlin/08-extensions.md",
     "docs/01-kotlin/07-control.md",
     "docs/01-kotlin/04-classes.md",
@@ -196,24 +212,9 @@
     "docs/01-kotlin/01-basics.md",
     "docs/01-kotlin/02-types.md",
     "docs/01-kotlin",
-    "docs/SUMMARY.md",
-    "docs/START-HERE.md",
-    "docs/RESOURCES.md",
-    "docs/README-NEW.md",
-    "docs/QUICKSTART.md",
-    "docs/KOTLIN-QUICK.md",
-    "docs/END-TO-END.md",
-    "docs/CONTEST-REGULATION.md",
     "docs/03-modules/Toggles.md",
     "docs/03-modules/README.md",
-    "docs/03-modules/ModuleD-Storage.md",
-    "docs/03-modules/ModuleC-Network.md",
-    "docs/03-modules/ModuleA-Architecture.md",
-    "docs/03-modules/ModuleB-UI.md",
-    "docs/03-modules/Integration.md",
     "docs/03-modules",
-    "docs/02-competencies/RESOURCES.md",
-    "docs/02-competencies/README.md",
     "docs/02-competencies",
     "docs/04-automation",
     "docs/START-HERE.md~",
