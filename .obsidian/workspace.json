@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "34c503fbea286daf",
+            "id": "95b3472616c28e49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/12-competition-checklist.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "12-competition-checklist"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#docs",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Закладки"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/01-kotlin-basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для README"
+              "title": "Обратные ссылки для 01-kotlin-basics"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/01-kotlin-basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из README"
+              "title": "Исходящие ссылки из 01-kotlin-basics"
             }
           },
           {
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/01-kotlin-basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура README"
+              "title": "Структура 01-kotlin-basics"
             }
           }
         ]
@@ -184,45 +183,44 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "34c503fbea286daf",
+  "active": "95b3472616c28e49",
   "lastOpenFiles": [
-    "docs/01-kotlin/README.md",
-    "docs/README.md",
-    "README.md",
-    "docs/START-HERE.md",
-    "docs/SUMMARY.md",
-    "docs/RESOURCES.md",
-    "docs/README-NEW.md",
-    "docs/CONTEST-REGULATION.md",
-    "docs/QUICKSTART.md",
-    "docs/KOTLIN-QUICK.md",
-    "docs/END-TO-END.md",
-    "docs/12-competition-checklist.md",
-    "docs/11-common-errors.md",
-    "docs/10-code-templates.md",
-    "docs/09-mvvm-architecture.md",
-    "docs/00-kotlin-vs-dart.md",
-    "Без названия.canvas",
-    "docs/01-kotlin/08-extensions.md",
-    "docs/01-kotlin/07-control.md",
-    "docs/01-kotlin/04-classes.md",
-    "docs/01-kotlin/03-functions.md",
-    "docs/01-kotlin/05-collections.md",
-    "docs/01-kotlin/06-nullsafety.md",
-    "docs/01-kotlin/01-basics.md",
-    "docs/01-kotlin/02-types.md",
-    "docs/01-kotlin",
+    "docs/04-automation/04-offline-queue.md",
+    "docs/04-automation/README.md",
+    "docs/04-automation/03-crash.md",
+    "docs/04-automation/02-errors.md",
+    "docs/04-automation/01-events.md",
+    "docs/04-automation",
+    "docs/02-competencies/RESOURCES.md",
+    "docs/02-competencies/README.md",
+    "docs/02-competencies/PROJECT-ISSUES.md",
+    "docs/02-competencies/G-delivery.md",
+    "docs/02-competencies/F-testing.md",
+    "docs/02-competencies/END-TO-END.md",
+    "docs/02-competencies/D-storage.md",
+    "docs/02-competencies/CONTEST-REGULATION.md",
+    "docs/02-competencies/E-hardware.md",
+    "docs/02-competencies/C-network.md",
+    "docs/02-competencies/09-code-templates.md",
+    "docs/02-competencies/B-ui.md",
+    "docs/02-competencies/A-architecture.md",
+    "docs/02-competencies/10-common-errors.md",
+    "docs/02-competencies/11-competition-checklist.md",
+    "docs/02-competencies/09-mvvm-architecture.md",
+    "docs/02-competencies",
     "docs/03-modules/Toggles.md",
     "docs/03-modules/README.md",
+    "docs/03-modules/ModuleD-Storage.md",
+    "docs/03-modules/ModuleB-UI.md",
+    "docs/03-modules/ModuleC-Network.md",
     "docs/03-modules",
-    "docs/02-competencies",
-    "docs/04-automation",
-    "docs/START-HERE.md~",
-    "docs/~$-Конкурсное-задание (1).docx",
-    "docs/04-Конкурсное-задание (1).txt",
-    "docs/~$-Конкурсное-задание (1).rtf",
-    "docs/04-Конкурсное-задание (1).rtf",
-    "docs/~WRD0000.tmp",
+    "docs/01-kotlin",
+    "app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin",
+    "app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len",
+    "app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i",
+    "app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at",
+    "app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len",
+    "app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len",
     "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
     "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
   ]

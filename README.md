@@ -15,7 +15,7 @@
 ---
 
 ## 1. Основы и переменные
-```kotlin
+```
 val a = 10      // Нельзя изменить (Value)
 var b = 5       // Можно изменить (Variable)
 
@@ -28,7 +28,7 @@ val b: Boolean = true
 ```
 
 ## 2. Null Safety (Твоя защита от ошибок)
-```kotlin
+```
 var name: String? = null // Может быть null
 
 name?.length             // Безопасный вызов (вернет length или null)
@@ -39,7 +39,7 @@ val len = name?.length ?: 0 // Классическая связка
 ```
 
 ## 3. Управляющие конструкции
-```kotlin
+```
 // IF как выражение (в Котлине нет тернарного оператора ? :)
 val result = if (a > b) "Больше" else "Меньше"
 
@@ -59,7 +59,7 @@ for (item in list) { }       // Проход по коллекции
 ```
 
 ## 4. Коллекции и Массивы (Очень важно на задачах!)
-```kotlin
+```
 // МАССИВЫ (фиксированный размер)
 val arr = arrayOf(1, 2, 3)
 arr[0] = 10
@@ -82,7 +82,7 @@ val exists = mutable.any { it > 10 }         // Есть ли хоть один 
 ```
 
 ## 5. Строки и Преобразования
-```kotlin
+```
 val s = "Kotlin"
 println("Результат: $s и длина ${s.length}") // Шаблоны строк
 
@@ -97,7 +97,7 @@ val final = sb.toString()
 ```
 
 ## 6. Функции
-```kotlin
+```
 // Обычная
 fun sum(a: Int, b: Int): Int {
     return a + b
@@ -111,7 +111,7 @@ fun greet(name: String = "User") = "Hello, $name"
 ```
 
 ## 7. Классы и ООП
-```kotlin
+```
 // Хранилище данных (data создает toString, equals, copy автоматически)
 data class User(val id: Int, var name: String)
 
@@ -137,7 +137,7 @@ object MyConfig {
 | **run** | `this` | Результат строки | Настройка + расчет результата |
 
 ## 9. Математика (может пригодиться)
-```kotlin
+```
 import kotlin.math.*
 
 val m = max(10, 20)
@@ -148,7 +148,7 @@ val a = abs(-10)      // модуль
 ```
 
 ## 10. Ввод данных (Если нужно читать из консоли)
-```kotlin
+```
 import java.util.Scanner
 val scanner = Scanner(System.`in`)
 val word = scanner.next()    // Слово
@@ -158,7 +158,7 @@ val num = scanner.nextInt()   // Число
 
 ## 11. Сложные коллекции (Maps и Set)
 Если нужно считать количество предметов или хранить уникальные значения.
-```kotlin
+```
 // MAP (Ключ -> Значение)
 val map = mutableMapOf<String, Int>()
 map["Apple"] = 10              // Добавить
@@ -173,7 +173,7 @@ val numbers = mutableSetOf(1, 2, 2, 3) // Результат: [1, 2, 3]
 ```
 
 ## 12. Продвинутые операции со списками (Для задач)
-```kotlin
+```
 val list = listOf(1, 2, 3, 4, 5, 6)
 
 val groups = list.groupBy { it % 2 == 0 } // Группировка: {false=[1, 3, 5], true=[2, 4, 6]}
@@ -187,7 +187,7 @@ val clamped = x.coerceIn(0, 100)          // Результат: 100 (не да�
 
 ## 13. Работа с индексами
 Иногда нужно знать не только элемент, но и его номер:
-```kotlin
+```
 val fruits = listOf("Apple", "Banana", "Cherry")
 
 for ((index, fruit) in fruits.withIndex()) {
@@ -197,14 +197,14 @@ for ((index, fruit) in fruits.withIndex()) {
 
 ## 14. Сортировка объектов (Важно!)
 Если есть класс `User(val name: String, val score: Int)` и нужно отсортировать список таких пользователей:
-```kotlin
+```
 // Сначала по очкам (убывание), потом по имени (возрастание)
 val sortedUsers = users.sortedWith(compareByDescending<User> { it.score }.thenBy { it.name })
 ```
 
 ## 15. Форматирование вывода (Числа)
 Чтобы вывести `3.14` вместо `3.1415926` или добавить нули перед числом:
-```kotlin
+```
 val pi = 3.14159
 println("%.2f".format(pi)) // Выведет 3,14
 
@@ -214,7 +214,7 @@ println("%03d".format(num)) // Выведет 005 (полезно для вре�
 
 ## 16. Работа с Ошибками (Try-Catch)
 Чтобы программа не вылетала, если вводят плохие данные:
-```kotlin
+```
 try {
     val input = scanner.nextInt()
 } catch (e: Exception) {
@@ -228,7 +228,7 @@ try {
 1.  Создай папку `assets`: **ПКМ на папке `app` -> New -> Folder -> Assets Folder**.
 2.  Положи туда файл, например `data.txt`.
 3.  Код для чтения:
-```kotlin
+```
 // Читаем весь файл в строку
 val content = context.assets.open("data.txt").bufferedReader().use { it.readText() }
 
@@ -240,7 +240,7 @@ val lines = context.assets.open("data.txt").bufferedReader().readLines()
 Это современный стандарт. Чтобы не писать каждый раз `findViewById`, настрой Binding.
 
 **В файле `build.gradle.kts (Module :app)`:**
-```kotlin
+```
 android {
     ...
     viewBinding {
@@ -249,7 +249,7 @@ android {
 }
 ```
 **В Activity:**
-```kotlin
+```
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding // Название зависит от XML
 
@@ -270,7 +270,7 @@ class MainActivity : AppCompatActivity() {
 
 1.  Скопируй файл в папку `app/libs`.
 2.  В `build.gradle.kts (Module :app)` добавь:
-```kotlin
+```
 dependencies {
     implementation(files("libs/название_файла.jar"))
 }
@@ -278,7 +278,7 @@ dependencies {
 3.  Нажми **"Sync Now"** (слоник сверху).
 
 ## 20. Переход между экранами (Intents)
-```kotlin
+```
 // 1. Простой переход
 val intent = Intent(this, SecondActivity::class.java)
 startActivity(intent)
@@ -297,7 +297,7 @@ val name = intent.getStringExtra("USER_NAME")
 
 ## 21. Работа с Датой и Временем
 На конкурсах часто просят посчитать разницу во времени.
-```kotlin
+```
 import java.util.*
 import java.text.SimpleDateFormat
 
@@ -316,7 +316,7 @@ Handler(Looper.getMainLooper()).postDelayed({
 
 ## 22. Потоки (Coroutines) — База
 Если нужно сделать что-то «тяжелое», чтобы экран не завис.
-```kotlin
+```
 import kotlinx.coroutines.*
 
 // Запуск фоновой задачи
@@ -333,7 +333,7 @@ GlobalScope.launch(Dispatchers.IO) {
 ### 23. Настройки Gradle (Чтобы всё работало)
 Если проект создается с нуля, проверь эти строки в `build.gradle.kts (Module: app)`:
 
-```kotlin
+```
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -360,7 +360,7 @@ dependencies {
 ## 24. Список (RecyclerView) — шаблон Адаптера
 Это самая сложная часть, которую все забывают. Скопируй этот шаблон:
 
-```kotlin
+```
 class ProductAdapter : RecyclerView.Adapter<ProductAdapter.Holder>() {
     var items: List<Product> = emptyList()
         set(value) {
@@ -391,7 +391,7 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.Holder>() {
 ```
 
 ## 25. Сеть (Retrofit) — шаблон запроса
-```kotlin
+```
 // 1. Описываем запросы
 interface ApiService {
     @GET("photos")
@@ -415,7 +415,7 @@ object RetrofitInstance {
 ## 26. База данных (Room) — шаблон DAO
 Если нужно сохранять данные в телефон:
 
-```kotlin
+```
 @Dao
 interface PhotoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -430,7 +430,7 @@ interface PhotoDao {
 
 ## 27. Архитектура и Комментарии (Модуль А)
 В задании требуют комментарии в каждом классе. Создай шаблон в голове или в файле:
-```kotlin
+```
 /**
  * Назначение: [Например: Главный экран приложения]
  * Дата создания: 07.10.2023
@@ -441,7 +441,7 @@ interface PhotoDao {
 ## 28. Валидация Email и Пароля (Модуль Б)
 Задание требует строгий паттерн: `name@domenname.ru` (только строчные буквы и цифры) и пароль (8+ символов, заглавные, строчные, спецсимволы).
 
-```kotlin
+```
 fun isEmailValid(email: String): Boolean {
     val emailRegex = "^[a-z0-9]+@[a-z0-9]+\\.[a-z]{2,3}$".toRegex()
     return email.matches(emailRegex)
@@ -454,7 +454,7 @@ fun isPasswordValid(pass: String): Boolean {
 ```
 
 ## 29. Смена темы (Светлая/Темная)
-```kotlin
+```
 // Включить темную тему
 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
@@ -467,7 +467,7 @@ AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 
 ## 30. Работа с камерой и галереей (Модуль Д)
 Современный способ через `ActivityResultLauncher`:
-```kotlin
+```
 // Для галереи
 val pickVisualMedia = registerForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
     if (uri != null) {
@@ -483,7 +483,7 @@ val pickVisualMedia = registerForActivityResult(ActivityResultContracts.PickVisu
 Это делается через `WorkManager`.
 
 **1. Создай Worker:**
-```kotlin
+```
 class NotificationWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
     override fun doWork(): Result {
         // Код создания уведомления (NotificationCompat.Builder)
@@ -492,7 +492,7 @@ class NotificationWorker(context: Context, params: WorkerParameters) : Worker(co
 }
 ```
 **2. Запусти его при выходе из приложения (в onStop):**
-```kotlin
+```
 val request = OneTimeWorkRequestBuilder<NotificationWorker>()
     .setInitialDelay(1, TimeUnit.MINUTES)
     .addTag("notify_tag")
@@ -502,7 +502,7 @@ WorkManager.getInstance(this).enqueueUniqueWork("notify", ExistingWorkPolicy.REP
 
 ## 32. Event Bus для Web-сокетов (Модуль А)
 Самая простая реализация через Kotlin `Object` и `SharedFlow`:
-```kotlin
+```
 object EventBus {
     private val _events = MutableSharedFlow<String>() // Стринг или твой класс данных
     val events = _events.asSharedFlow()
@@ -522,7 +522,7 @@ lifecycleScope.launch {
 
 ## 33. TensorFlow Lite (Базовый запуск)
 Тебе дадут модель `.tflite`. Пример запуска:
-```kotlin
+```
 // Подключи библиотеку: implementation("org.tensorflow:tensorflow-lite:2.14.0")
 val interpreter = Interpreter(loadModelFile(assets, "model.tflite"))
 
@@ -534,7 +534,7 @@ interpreter.run(input, output)
 
 ## 34. Виджет (Модуль Д)
 Создай `AppWidgetProvider`. Главный метод:
-```kotlin
+```
 override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
     for (id in appWidgetIds) {
         val views = RemoteViews(context.packageName, R.layout.my_widget_layout)
@@ -546,7 +546,7 @@ override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appW
 
 ## 35. Тестирование (Модуль Е: TDD)
 Тебе нужно будет написать тест **до** того, как напишешь код.
-```kotlin
+```
 class OnboardingTest {
     @Test
     fun testQueueOrder() {
@@ -571,7 +571,7 @@ class OnboardingTest {
     android:layout_weight="1" />
 ```
 **Код переключения по кнопке "Next":**
-```kotlin
+```
 binding.btnNext.setOnClickListener {
     val current = binding.viewPager.currentItem
     if (current < adapter.itemCount - 1) {
@@ -585,7 +585,7 @@ binding.btnNext.setOnClickListener {
 
 ## 37. Таймер обратного отсчета (Для экрана «Игра»)
 На макете есть поиск игрока с таймером.
-```kotlin
+```
 val timer = object : CountDownTimer(10000, 1000) {
     override fun onTick(millisUntilFinished: Long) {
         binding.tvTimer.text = "Search: ${millisUntilFinished / 1000}s"
@@ -600,7 +600,7 @@ val timer = object : CountDownTimer(10000, 1000) {
 
 ## 38. Пульсирующая кнопка (Для Аудирования)
 В задании сказано: «кнопка должна плавно менять размер, создавая эффект пульсации».
-```kotlin
+```
 val pulseAnimation = ObjectAnimator.ofPropertyValuesHolder(
     binding.btnMicrophone,
     PropertyValuesHolder.ofFloat("scaleX", 1.2f),
@@ -621,13 +621,13 @@ binding.btnMicrophone.scaleY = 1f
 
 ## 39. Сетка упражнений (GridLayout)
 На главном экране упражнения расположены плиткой. Проще всего это сделать через `RecyclerView` с `GridLayoutManager`.
-```kotlin
+```
 binding.recyclerView.layoutManager = GridLayoutManager(this, 2) // 2 колонки
 ```
 
 ## 40. Статусы кнопок (Правильно/Неправильно)
 На экранах с тестами кнопки меняют цвет (Зеленый/Оранжевый).
-```kotlin
+```
 fun checkAnswer(isCorrect: Boolean, button: Button) {
     if (isCorrect) {
         button.setBackgroundColor(Color.GREEN)
@@ -651,7 +651,7 @@ fun checkAnswer(isCorrect: Boolean, button: Button) {
 
 ## 42. Заголовки для Supabase (Retrofit Headers)
 Supabase требует передавать `apikey` и `Authorization`. Чтобы не писать это в каждом запросе, добавь это в `RetrofitInstance`:
-```kotlin
+```
 // В объекте RetrofitInstance добавь перехватчика (Interceptor):
 val client = OkHttpClient.Builder().addInterceptor { chain ->
     val request = chain.request().newBuilder()
@@ -666,7 +666,7 @@ val client = OkHttpClient.Builder().addInterceptor { chain ->
 
 ## 43. Сохранение настроек (SharedPreferences)
 Для задач: «сохранить выбранный язык», «сохранить сессию входа», «сохранить состояние Onboarding».
-```kotlin
+```
 val prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
 
 // Сохранить
@@ -686,7 +686,7 @@ val isLoggedIn = prefs.getBoolean("is_logged_in", false)
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
 ```
 **Код запроса:**
-```kotlin
+```
 val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
     if (isGranted) { /* Ок */ } else { /* Отказ */ }
 }
@@ -695,7 +695,7 @@ val requestPermissionLauncher = registerForActivityResult(ActivityResultContract
 
 ## 45. Навигация между фрагментами (Navigation Component)
 Если в проекте используются Фрагменты, навигация делается так:
-```kotlin
+```
 // Переход
 findNavController().navigate(R.id.action_list_to_detail)
 
@@ -709,7 +709,7 @@ val id = arguments?.getInt("id")
 
 ## 46. Программная смена языка (Локализация)
 В задании просят менять язык в приложении. Самый простой способ:
-```kotlin
+```
 fun setLocale(langCode: String) {
     val locale = Locale(langCode)
     Locale.setDefault(locale)
@@ -744,7 +744,7 @@ fun setLocale(langCode: String) {
 
 ### Как организовать "серию побед" (Баллы):
 Создай глобальную переменную в Activity:
-```kotlin
+```
 var streakCount = 0
 var totalScore = 0.0
 
@@ -772,7 +772,7 @@ fun onWrongAnswer() {
 
 Добавь себе в шпору пример вызова из Activity:
 
-```kotlin
+```
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
@@ -893,7 +893,7 @@ lifecycleScope.launch {
 
 Добавь этот блок команд Git, чтобы не вспоминать их в панике:
 
-```bash
+```
 # Начало работы
 git init
 git remote add origin https://github.com/Fizzy423/MyTest.git
@@ -977,7 +977,7 @@ git reset --hard    # Сбросить всё к чертям до послед�
 ### Дополнительные советы по Модулю Ж:
 
 *   **Git Merge:** Не забудь в конце сделать слияние. В терминале:
-    ```bash
+    ```
     git checkout main
     git merge Path-1  # вместо Path-1 имя твоей сессии
     git push origin main
