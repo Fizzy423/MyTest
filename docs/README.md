@@ -1,75 +1,59 @@
 # 📚 Документация для конкурса по мобильной разработке
 
-## 🎯 Оглавление
+#docs #navigation
 
-1. [Kotlin - Основы синтаксиса](01-kotlin-basics.md)
-2. [Kotlin - Коллекции и функции высшего порядка](02-kotlin-collections.md)
-3. [Android - Основы компонентов](03-android-components.md)
-4. [Android - Работа с UI (Views, ViewBinding)](04-android-ui.md)
-5. [RecyclerView и адаптеры](05-recyclerview.md)
-6. [Room Database - База данных](06-room-database.md)
-7. [Retrofit - Работа с сетью](07-retrofit-network.md)
-8. [Coroutines - Многопоточность](08-coroutines.md)
-9. [MVVM и Architecture Components](09-mvvm-architecture.md)
-10. [Готовые шаблоны кода](10-code-templates.md)
-11. [Частые ошибки и их решения](11-common-errors.md)
-12. [Чеклист для конкурса](12-competition-checklist.md)
+# Документация (структура и навигация)
 
-## 📖 Как пользоваться документацией
+## Быстрый старт
+- [START-HERE.md](START-HERE.md)
 
-1. **До конкурса**: Изучи все файлы последовательно
-2. **На конкурсе**: Используй как справочник, быстро находи нужные примеры
-3. **10 минут интернета**: Скачай дополнительные примеры или библиотеки
+## 01-kotlin (основы языка)
+- [01-kotlin/README.md](01-kotlin/README.md)
+- [01-kotlin/01-basics.md](01-kotlin/01-basics.md)
+- [01-kotlin/02-types.md](01-kotlin/02-types.md)
+- [01-kotlin/03-functions.md](01-kotlin/03-functions.md)
+- [01-kotlin/04-classes.md](01-kotlin/04-classes.md)
+- [01-kotlin/05-collections.md](01-kotlin/05-collections.md)
+- [01-kotlin/06-nullsafety.md](01-kotlin/06-nullsafety.md)
+- [01-kotlin/07-control.md](01-kotlin/07-control.md)
+- [01-kotlin/08-extensions.md](01-kotlin/08-extensions.md)
 
-## 🔗 Полезные ссылки для 10 минут интернета
+## 02-competencies (модули и регламент)
+- [02-competencies/README.md](02-competencies/README.md)
+- [02-competencies/CONTEST-REGULATION.md](02-competencies/CONTEST-REGULATION.md)
+- [02-competencies/END-TO-END.md](02-competencies/END-TO-END.md)
+- [02-competencies/PROJECT-ISSUES.md](02-competencies/PROJECT-ISSUES.md)
+- [02-competencies/RESOURCES.md](02-competencies/RESOURCES.md)
+- [02-competencies/A-architecture.md](02-competencies/A-architecture.md)
+- [02-competencies/B-ui.md](02-competencies/B-ui.md)
+- [02-competencies/C-network.md](02-competencies/C-network.md)
+- [02-competencies/D-storage.md](02-competencies/D-storage.md)
+- [02-competencies/E-hardware.md](02-competencies/E-hardware.md)
+- [02-competencies/F-testing.md](02-competencies/F-testing.md)
+- [02-competencies/G-delivery.md](02-competencies/G-delivery.md)
+- [02-competencies/09-mvvm-architecture.md](02-competencies/09-mvvm-architecture.md)
+- [02-competencies/09-code-templates.md](02-competencies/09-code-templates.md)
+- [02-competencies/10-common-errors.md](02-competencies/10-common-errors.md)
+- [02-competencies/11-competition-checklist.md](02-competencies/11-competition-checklist.md)
 
-### Офлайн-документация (скачать до конкурса)
-- **Android Studio**: Help → Download Documentation
-- **Kotlin Docs**: https://kotlinlang.org/docs/kotlin-docs.pdf
-- **Android Developer**: Settings → System → Updates → Download offline docs
+## 03-modules (реализация модулей)
+- [03-modules/README.md](03-modules/README.md)
+- [03-modules/ModuleA-Architecture.md](03-modules/ModuleA-Architecture.md)
+- [03-modules/ModuleB-UI.md](03-modules/ModuleB-UI.md)
+- [03-modules/ModuleC-Network.md](03-modules/ModuleC-Network.md)
+- [03-modules/ModuleD-Storage.md](03-modules/ModuleD-Storage.md)
+- [03-modules/Integration.md](03-modules/Integration.md)
+- [03-modules/Toggles.md](03-modules/Toggles.md)
 
-### GitHub репозитории с шаблонами
-- https://github.com/android/architecture-samples (MVVM примеры)
-- https://github.com/android/sunflower (полное приложение)
-- https://github.com/skydoves/android-developer-roadmap
-- https://github.com/MindorksOpenSource/android-kotlin-samples
-
-### Быстрые шпаргалки
-- https://devhints.io/kotlin (Kotlin cheatsheet)
-- https://developer.android.com/codelabs (коделабы Android)
-
-## ⚡ Быстрый старт проекта
-
-```bash
-# Создать новый проект
-File → New → New Project → Empty Views Activity
-
-# Синхронизация Gradle
-Tools → Sync Project with Gradle Files
-
-# Запуск приложения
-Shift + F10 или зеленая стрелка
-```
-
-## 📱 Структура Android проекта
-
-```
-app/
-├── src/main/
-│   ├── java/com/package/
-│   │   ├── MainActivity.kt          # Главный экран
-│   │   ├── data/                    # Данные (Room, API)
-│   │   ├── domain/                  # Модели (data class)
-│   │   └── ui/                      # UI компоненты (адаптеры)
-│   ├── res/
-│   │   ├── layout/                  # XML разметка
-│   │   ├── drawable/                # Иконки, изображения
-│   │   ├── values/                  # Строки, цвета, темы
-│   │   └── navigation/              # Навигация
-│   └── AndroidManifest.xml          # Конфигурация приложения
-└── build.gradle.kts                 # Зависимости
-```
+## 04-automation (события, ошибки, мониторинг)
+- [04-automation/README.md](04-automation/README.md)
+- [04-automation/01-events.md](04-automation/01-events.md)
+- [04-automation/02-errors.md](04-automation/02-errors.md)
+- [04-automation/03-crash.md](04-automation/03-crash.md)
+- [04-automation/04-offline-queue.md](04-automation/04-offline-queue.md)
 
 ---
 
-**Важно**: Практикуйся писать код БЕЗ автодополнения, чтобы запомнить синтаксис!
+## Навигация
+- Этот файл — точка входа.
+- Каждый файл ниже содержит ссылку обратно на `docs/README.md`.
