@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "95b3472616c28e49",
+            "id": "34c503fbea286daf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01-kotlin-basics.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-kotlin-basics"
+              "title": "README"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#start",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01-kotlin-basics.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для 01-kotlin-basics"
+              "title": "Обратные ссылки для README"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01-kotlin-basics.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из 01-kotlin-basics"
+              "title": "Исходящие ссылки из README"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01-kotlin-basics.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура 01-kotlin-basics"
+              "title": "Структура README"
             }
           }
         ]
@@ -183,23 +184,45 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "c901792ed2641491",
+  "active": "34c503fbea286daf",
   "lastOpenFiles": [
-    "docs/PROJECT-ISSUES.md",
-    "docs/12-competition-checklist.md",
+    "docs/01-kotlin/README.md",
+    "docs/01-kotlin/08-extensions.md",
+    "docs/01-kotlin/07-control.md",
+    "docs/01-kotlin/04-classes.md",
+    "docs/01-kotlin/03-functions.md",
+    "docs/01-kotlin/05-collections.md",
+    "docs/01-kotlin/06-nullsafety.md",
+    "docs/01-kotlin/01-basics.md",
+    "docs/01-kotlin/02-types.md",
+    "docs/01-kotlin",
+    "docs/SUMMARY.md",
+    "docs/START-HERE.md",
+    "docs/RESOURCES.md",
+    "docs/README-NEW.md",
+    "docs/QUICKSTART.md",
+    "docs/KOTLIN-QUICK.md",
+    "docs/END-TO-END.md",
+    "docs/CONTEST-REGULATION.md",
+    "docs/03-modules/Toggles.md",
+    "docs/03-modules/README.md",
+    "docs/03-modules/ModuleD-Storage.md",
+    "docs/03-modules/ModuleC-Network.md",
+    "docs/03-modules/ModuleA-Architecture.md",
+    "docs/03-modules/ModuleB-UI.md",
+    "docs/03-modules/Integration.md",
+    "docs/03-modules",
+    "docs/02-competencies/RESOURCES.md",
+    "docs/02-competencies/README.md",
+    "docs/02-competencies",
+    "docs/04-automation",
+    "docs/START-HERE.md~",
+    "docs/~$-Конкурсное-задание (1).docx",
+    "docs/04-Конкурсное-задание (1).txt",
+    "docs/~$-Конкурсное-задание (1).rtf",
+    "docs/04-Конкурсное-задание (1).rtf",
+    "docs/~WRD0000.tmp",
     "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
-    "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
-    "docs/10-code-templates.md",
-    "docs/11-common-errors.md",
-    "docs/README.md",
-    "docs/09-mvvm-architecture.md",
-    "docs/08-coroutines.md",
-    "docs/07-retrofit-network.md",
-    "docs/06-room-database.md",
-    "docs/05-recyclerview.md",
-    "docs/04-android-ui.md",
-    "docs/02-kotlin-collections.md",
-    "docs/03-android-components.md",
-    "docs/01-kotlin-basics.md"
+    "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
   ]
 }
