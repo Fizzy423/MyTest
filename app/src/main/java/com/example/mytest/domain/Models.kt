@@ -1,28 +1,34 @@
+/**
+ * Назначение: Models.kt
+ * Дата создания: 10.02.2026
+ * Автор: Валерьева Татьяна
+ * Описание: Модели данных для упражнений, таблицы лидеров и сущность пользователя для БД.
+ */
 package com.example.mytest.domain
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-// Для списка товаров
-data class Product(
-    val id: Int,
-    val title: String,
-    val price: String,
-    val image: String
+// 1. Модель для БД (UserEntity) - НУЖНА ДЛЯ AppDatabase
+@Entity(tableName = "user_table")
+data class UserEntity(
+    @PrimaryKey val id: Int = 0,
+    val firstName: String,
+    val email: String,
+    val token: String? = null
 )
 
-// Для интернета
-data class PhotoDto(
+// 2. Модель для списка упражнений - НУЖНА ДЛЯ ExerciseAdapter
+data class Exercise(
     val id: Int,
     val title: String,
-    val url: String,
-    val thumbnailUrl: String
+    val description: String,
+    val icon: String
 )
 
-// Для базы данных
-@Entity(tableName = "photos_table")
-data class PhotoEntity(
-    @PrimaryKey val id: Int,
-    val title: String,
-    val url: String
+// 3. Модель для таблицы лидеров - НУЖНА ДЛЯ MockData
+data class Leader(
+    val name: String,
+    val score: Int,
+    val avatar: String
 )

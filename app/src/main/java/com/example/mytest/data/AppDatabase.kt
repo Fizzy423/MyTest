@@ -1,14 +1,23 @@
+/**
+ * Назначение: AppDatabase.kt
+ * Дата создания: 10.02.2026
+ * Автор: Валерьева Татьяна
+ * Описание: Основной класс базы данных Room для хранения данных пользователя.
+ */
 package com.example.mytest.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.mytest.domain.PhotoEntity
+import com.example.mytest.domain.UserEntity // Импортируем нашу сущность
 
-@Database(entities = [PhotoEntity::class], version = 1)
+// Указываю UserEntity вместо PhotoEntity
+@Database(entities = [UserEntity::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun photoDao(): PhotoDao
+
+    // Метод должен возвращать UserDao
+    abstract fun userDao(): UserDao
 
     companion object {
         @Volatile
@@ -20,7 +29,9 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "app_database"
-                ).build()
+                )
+                    .fallbackToDestructiveMigration() // Полезно на конкурсе: при смене версии БД не вылетит
+                    .build()
                 INSTANCE = instance
                 instance
             }
